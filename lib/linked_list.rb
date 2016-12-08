@@ -46,9 +46,9 @@ class LinkedList
     	(position - 1).times do
       	current_node = current_node.next_node
     	end
-    	new_node = current_node.next_node
-    	new_node = Node.new(data)
-    	new_node.next_node = new_node
+    	temp_node = current_node.next_node
+    	temp_node = Node.new(data)
+    	temp_node.next_node = temp_node
     	data
   end
 
@@ -63,8 +63,7 @@ class LinkedList
   			current_node = current_node.next_node
   			find_sounds += " "
   		end
-  		find_sounds.chop
-  		# .strip
+  		find_sounds.strip
   	end
 
   	def includes?(sound)

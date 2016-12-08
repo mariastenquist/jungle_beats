@@ -52,9 +52,9 @@ class JungleBeatTest < Minitest::Test
   end
 
   def test_playing_the_beats
-    skip
+
     jb = JungleBeat.new
-    jb.append("ding dah oom oom ding oom")
+    jb.append("deep doo ditt woo hoo shu")
 
     assert_equal "deep doo ditt woo hoo shu", jb.linked_list.to_string
   end
