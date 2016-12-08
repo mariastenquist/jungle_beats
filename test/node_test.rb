@@ -20,9 +20,8 @@ class NodeTest < MiniTest::Test
 	end
 
 	def test_it_can_access_different_data
-		node = Node.new("zing")
-		assert_equal "zing", node.data
+		node = Node.new("zippy")
+		assert_equal "zippy", node.data
 	end
-
 end
 
