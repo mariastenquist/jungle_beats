@@ -25,7 +25,6 @@ class LinkedListTest < MiniTest::Test
 		linked_list = LinkedList.new
 		linked_list.append("something")
 		assert_equal nil, linked_list.head.next_node
-		# binding.pry
 	end
 
 	def test_it_can_count_nodes
@@ -64,7 +63,7 @@ class LinkedListTest < MiniTest::Test
 	end
 
 	def test_append_prepend_more_data_points
-		linked_list = LinkedList.new
+		linked_list = LinkedList.new 
 		linked_list.append("plop")
 		linked_list.append("suu")
 		linked_list.prepend("dop")
