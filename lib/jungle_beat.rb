@@ -19,7 +19,7 @@ class JungleBeat
 
   def play
     beats = linked_list.to_string
-    'say -r 500 -v Boing "#{current_node.data}"'
-    "#{current_node.data}"
+    'say -r 500 -v Boing "#{beats}"'
+    "#{beats}"
   end
 end
